@@ -1,0 +1,43 @@
+{% extends 'portal/normal_base.html' %}
+{% load static %}
+
+{% block service_active%}active{% endblock %}
+{% block content %}
+<div class = "content_title">
+	<h4 class="port_h">GENERAL MANAGEMENT PlLATFOR OF SMART CITY SERVICES</h4>
+	<h1 class="port_h"> 智慧市政管理平台<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">平台概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+            城市水、电、气、热、管线、道路、桥梁、照明等行业设施和资源是城市运行的基本要素。智慧市政综合管理平台就是对城市市政基础设施进行综合管理，并进行引导、规范、治理、经营和服务，为广大市民提供一个优美的环境、一个优良的秩序、一个优质的服务、一个优化的管理。
+            智慧市政综合管理平台融合先进的移动4G技术、物联网技术，形成协同管理、运行维护、动态监测、应急指挥和公众服务环环相扣、紧密配合的管理机制与服务模式，从管理源头上提升城市基础建设和设施安全专项应急管理的"测、报、防、抗、救、援"综合管理能力，实现统一指挥、反应灵敏、功能齐全、协调有序、运转高效的城建应急管理目标，为保障城市基础设施运行安全和打造服务型政府提供全方位支撑。
+		</blockquote>
+    </div>
+    <div class = "summary_img">
+	    <img class ="municipal_img" src="{% static 'portal/img/municipal.jpg'%}"></img>
+	    <p>智慧市政综合管理平台</p>
+    </div>
+</div>
+<div class = "advantage">
+	<h3 class="port_h">平台优势</h3>
+	<div class = "advantage_content">
+		<blockquote>
+            运用现代信息技术、构建统一开放的智慧市政综合管理平台，对市政基础设施部件进行系统编码和精确定位，实现管理信息的准确采集、网络传输和实时管理。
+            建立指挥、监督、执行相分离的互动型指挥市政管理è体制，再造城市管理流程。
+            整合城市管理资源，提高管理效率，提升公共服务质量和水平。
+            充分整合实时监控系统，通过动态数据与管理业务的结合应用，实现智慧市政管理的全方位监控。
+            建立一套科学完善的自动评价机制，对智慧市政管理各个相关责任主体进行综合考核评价。
+		</blockquote>
+    </div>
+</div>
+<div class = "functions">
+	<h3 class="port_h">主要功能</h3>
+	<div class = "functions_content">
+		<img src="{% static 'portal/img/municipal_functions_img.png' %}" style="width:80%;"></img>
+	</div>
+</div>
+
+{% endblock content%}
+

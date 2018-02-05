@@ -1,0 +1,279 @@
+@charset "UTF-8";
+.icon {
+  /* 通过设置 font-size 来改变图标大小 */
+  width: 1em;
+  height: 1em;
+  /* 图标和文字相邻时，垂直对齐 */
+  vertical-align: -0.15em;
+  /* 通过设置 color 来改变 SVG 的颜色/fill */
+  fill: currentColor;
+  /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+     normalize.css 中也包含这行 */
+  overflow: hidden; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB","Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale;
+  /*firefox*/ }
+
+.main_page .page_navigater {
+  position: fixed;
+  z-index: 120;
+  left: 96px;
+  top: 156px; }
+  .cmain_page .page_navigater .menu_icon {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 46px;
+    cursor: pointer;
+    transition: all 148ms ease-out; }
+  .main_page .page_navigater .vertical_line {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    z-index: 30;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-clip: content-box;
+    padding: 15px 0; }
+  .main_page .page_navigater .pages_list {
+    position: relative;
+    z-index: 40;
+    margin: 0;
+    padding: 0; }
+    .main_page .page_navigater .pages_list .page_link_list {
+      margin: 10px 0;
+      list-style: none; }
+      .main_page .page_navigater .pages_list .page_link_list a {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        height: 26px; }
+        .main_page .page_navigater .pages_list .page_link_list a:link, .main_page .page_navigater .pages_list .page_link_list a:visited, .main_page .page_navigater .pages_list .page_link_list a:hover, .main_page .page_navigater .pages_list .page_link_list a:active {
+          color: white;
+          text-decoration: none; }
+        .main_page .page_navigater .pages_list .page_link_list a:hover {
+            color:rgba(102,193,33,0.84); }
+          .main_page .page_navigater .pages_list .page_link_list a:hover .circle_dot {
+            background-color:black; }
+          .main_page .page_navigater .pages_list .page_link_list a:hover .link_text {
+            color:black; }
+   .main_page .page_navigater .pages_list .circle_dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.7);
+      transition: all 148ms ease-out; }
+    .main_page .page_navigater .pages_list .link_text {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 20px;
+      padding-left: 30px;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      transition: all 148ms ease-out; }
+.main_page .share_link_panel {
+  position: fixed;
+  z-index: 130;
+  right: 70px;
+  top: 130px;
+  height: 28px;
+  width: 208px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main_page .share_link_panel .link_icon {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
+.main_page #menu {
+  position: fixed;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-40%); }
+  .main_page #menu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main_page #menu li a:hover {
+      text-decoration: none; }
+      .main_page #menu li a:hover .circle_item {
+        background-color: white; }
+  .main_page #menu li.active a .circle_item {
+    background-color: #fff; }
+  .main_page #menu .vertical_line {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 1px;
+    padding: 16px 0;
+    background-clip: content-box;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .main_page #menu .circle_item {
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 168ms ease-out; }
+.main_page .modal_menu_nav {
+  position: fixed;
+  z-index: 160;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 74, 71, 0.98);
+  display: none; }
+  .main_page .modal_menu_nav .close_btn {
+    position: absolute;
+    z-index: 10;
+    top: 190px;
+    right: 92px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 118ms ease-out;
+    line-height: 1;
+    cursor: pointer; }
+    .main_page .modal_menu_nav .close_btn:hover {
+      color: white; }
+  .main_page .modal_menu_nav .sht_title {
+    height: 46px;
+    display: flex;
+    width: 672px;
+    margin: 108px auto 184px; }
+    .main_page .modal_menu_nav .sht_title .cetc {
+      flex: 1.2;
+      background-image: url("../img/logo_cetc_white.svg");
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: left center; }
+    .main_page .modal_menu_nav .sht_title .sht {
+      flex: 1;
+      background-image: url("../img/logo_sht_white.svg");
+      background-size: auto 96%;
+      background-repeat: no-repeat;
+      background-position: right bottom; }
+  .main_page .modal_menu_nav .company_info {
+    position: absolute;
+    bottom: 50px;
+    font-size: 16px;
+    color: #808080;
+    width: 100%;
+    text-align: center;
+    line-height: 1; }
+    .main_page .modal_menu_nav .company_info .copyright {
+      margin-bottom: 9px; }
+    .main_page .modal_menu_nav .company_info .post {
+      padding: 0 18px; }
+  .main_page .modal_menu_nav .menu_panel {
+    margin: 0 166px; }
+    .main_page .modal_menu_nav .menu_panel .header_list {
+      margin: 0 54px;
+      line-height: 1;
+      font-family: '楷体';
+      font-size: 30px;
+      color: #fff;
+      letter-spacing: 0px;
+      display: flex;
+      justify-content: space-between; }
+      .main_page .modal_menu_nav .menu_panel .header_list .list_item {
+        flex: 1;
+        text-align: center; }
+    .main_page .modal_menu_nav .menu_panel .horizon_line {
+      height: 1px;
+      width: 100%;
+      background-color: #ccc;
+      margin: 28px auto 34px; }
+    .main_page .modal_menu_nav .menu_panel .list_item_panel {
+      margin: 0 54px;
+      line-height: 1;
+      display: flex;
+      justify-content: space-between; }
+    .main_page .modal_menu_nav .menu_panel .list_ul {
+      flex: 1;
+      margin: 0;
+      padding: 0; }
+      .main_page .modal_menu_nav .menu_panel .list_ul .list_li {
+        text-align: center;
+        list-style: none;
+        margin: 20px 10px; }
+        .main_page .modal_menu_nav .menu_panel .list_ul .list_li:first-child {
+          margin-top: 0; }
+        .main_page .modal_menu_nav .menu_panel .list_ul .list_li .list_link {
+          color: #ccc;
+          font-size: 22px;
+          font-weight: lighter;
+          letter-spacing: 1px; }
+          .main_page .modal_menu_nav .menu_panel .list_ul .list_li .list_link:link, .main_page .modal_menu_nav .menu_panel .list_ul .list_li .list_link:visited, .main_page .modal_menu_nav .menu_panel .list_ul .list_li .list_link:hover, .main_page .modal_menu_nav .menu_panel .list_ul .list_li .list_link:active {
+            color: #ccc;
+            text-decoration: none; }
+.main_page .back_to_top {
+  position: fixed;
+  z-index: 150;
+  bottom: 20px;
+  right: 60px;
+  color: #4f4a47;
+  opacity: 0;
+  transition: all .6s .3s ease-out; }
+  .main_page .back_to_top .back_top_link {
+    display: flex;
+    width: 1em;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0;
+    flex-direction: column; }
+    .main_page .back_to_top .back_top_link:link, .main_page .back_to_top .back_top_link:visited, .main_page .back_to_top .back_top_link:hover, .main_page .back_to_top .back_top_link:active {
+      color: #4f4a47;
+      text-decoration: none; }
+  .main_page .back_to_top .vertical_line {
+    height: 86px;
+    width: 1px;
+    background-color: #4f4a47;
+    margin: 4px auto 0; }
+
+.notFirstPage .page_navigater .menu_icon {
+  color: #4f4a47; }
+.notFirstPage .page_navigater .vertical_line {
+  background-color: rgba(192, 192, 192, 0.6);
+  z-index: -1; }
+.notFirstPage .page_navigater .pages_list .page_link_list a:link, .notFirstPage .page_navigater .pages_list .page_link_list a:visited, .notFirstPage .page_navigater .pages_list .page_link_list a:hover, .notFirstPage .page_navigater .pages_list .page_link_list a:active {
+  color: rgba(192, 192, 192, 0.6);
+  text-decoration: none; }
+.notFirstPage .page_navigater .pages_list .page_link_list a:hover {
+  text-decoration: none; }
+  .notFirstPage .page_navigater .pages_list .page_link_list a:hover .circle_dot {
+    background-color: #4f4a47; }
+  .notFirstPage .page_navigater .pages_list .page_link_list a:hover .link_text {
+    color: #4f4a47; }
+.notFirstPage .page_navigater .pages_list .page_link_list.active a .circle_dot {
+  background-color: #4f4a47; }
+.notFirstPage .page_navigater .pages_list .page_link_list.active a .link_text {
+  color: #4f4a47; }
+.notFirstPage .page_navigater .pages_list .circle_dot {
+  background-color: rgba(192, 192, 192, 0.6); }
+.notFirstPage .page_navigater .pages_list .link_text {
+  color: rgba(192, 192, 192, 0.6); }
+.notFirstPage .share_link_panel .link_icon {
+  color: #4f4a47; }
+.notFirstPage #menu li a:hover .circle_item {
+  background-color: #4f4a47; }
+.notFirstPage #menu li.active a .circle_item {
+  background-color: #4f4a47; }
+.notFirstPage #menu .vertical_line {
+  background-color: rgba(192, 192, 192, 0.6); }
+.notFirstPage #menu .circle_item {
+  background-color: rgba(192, 192, 192, 0.6);
+  transition: all 168ms ease-out; }
+.notFirstPage .back_to_top {
+  opacity: 1;
+  bottom: 0; }
+
+/*# sourceMappingURL=common.css.map */

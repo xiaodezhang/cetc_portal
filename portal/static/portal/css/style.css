@@ -1,0 +1,240 @@
+.job_take_list{
+	height:25%;
+}
+.container_inline_inline a.job_link{
+	color:black;
+}
+.container_inline_inline{
+	height:50%;
+}
+.summary_img{
+	padding:30px;
+	text-align:center;
+}
+
+.municipal_img{
+	width:70%;
+}
+
+
+#footer_div{
+	width:1840px;
+	height:180px;
+	background-color:#000000b5;
+	margin-top:80px;
+}
+
+.footer_content{
+	width:900px;
+	float:left;
+	height:180px;
+}
+
+#footer_link{
+	height:50%;
+}
+
+.footer_link_content{
+	height:100%;
+	width:200px;
+	float:left;
+	color:#ccc;
+	text-align:center;
+	padding-top:40px;
+}
+
+#footer_address{
+	text-align:center;
+	color:#ccc;
+}
+
+#footer_vertical_line{
+	width:1px;
+	background-color:#ccc;
+	float:left;
+	height:150px;
+	margin-top:25px;
+}
+
+.footer_img{
+	width:23%;
+	margin:40px
+}
+
+#footer_right{
+	text-align:center;
+}
+
+body{
+	letter-spacing:2px;
+}
+
+.port_h{
+	color:#2aa7af;
+}
+
+.functions_content{
+	text-align:center;
+}
+
+.advantage_imgs{
+	text-align:center;
+}
+
+.advantage_img{
+	width:30%;
+	margin:10px;
+}
+ .main_page .page_navigater .vertical_line{
+	 background-color:rgba(33,27,27,0.7)
+ }
+
+.main_page .page_navigater .pages_list .circle_dot{
+	background-color:rgba(192,192,192,0.6);
+}
+
+ #fullpage .firstPage .job_take{
+	 background-image:url(../img/job_take.jpg);
+ }
+ #fullpage .firstPage .job_take_title_center{
+	 background-image:url(../img/job_title.svg);
+ }
+
+
+ #fullpage .firstPage .news_center{
+	 background-image:url(../img/news.jpg);
+ }
+ #fullpage .firstPage .news_center_title_center{
+	 background-image:url(../img/news_title.svg);
+ }
+
+ #fullpage .firstPage .product_service{
+	 background-image:url(../img/service.jpg);
+ }
+ #fullpage .firstPage .product_service_title_center{
+	 background-image:url(../img/service_title.svg);
+ }
+
+ #fullpage .firstPage .home_first_img{
+	 background-image:url(../img/first_page.jpg);
+ }
+ #fullpage .firstPage .home_title_center{
+	 background-image:url(../img/first_title.svg);
+ }
+
+
+
+ #fullpage .firstPage .contact_us{
+	 background-image:url(../img/contact.jpg);
+ }
+ #fullpage .firstPage .contact_us_title_center{
+	 background-image:url(../img/contact_title.svg);
+ }
+
+
+ .container_inline{
+	 float:left;
+	 width:500px;
+	 height:100%;
+	 margin-left:120px;
+ }
+
+
+#news_container{
+	width:1400px;
+	height:700px;
+	margin-left:320px;
+}
+
+#contact_container{
+	width:1400px;
+	height:700px;
+	margin-left:320px;
+	font-size:15px;
+}
+
+
+.news_list{
+	height:25%;
+	margin-top:20px;
+}
+
+.news_list_title{
+	height:25%;
+}
+.news_list_content{
+	height:50%;
+}
+.news_list_describe{
+	height:25%;
+	font-size:10px;
+}
+.news_list_img{
+	width:20%;
+	border-radius:10px;
+}
+
+.news_list_title_time{
+	float:right;
+}
+
+.news_list_line{
+	width:95%;
+	height:1px;
+	background-color:#9e626224;
+	margin-top:18px;
+
+}
+
+a.container_inline_a{
+	color:#000000b5;
+}
+
+.content_title{
+	margin-top:50px;
+}
+
+.contact_tel_div{
+	height:20%;
+}
+
+.long_contact_tel_div{
+	height:30%;
+	margin-bottom:20px;
+}
+
+
+.main_page .page_navigater .pages_list .link_text{
+	color:rgba(192,192,192,0.6);
+}
+
+.main_page .page_navigater .pages_list .circle_dot{
+	color:rgba(192,192,192,0.6);
+}
+
+.main_page .page_navigater .pages_list .active .circle_dot{
+	background-color:black;
+}
+
+.main_page .page_navigater .pages_list .active .link_text{
+	color:black;
+}
+
+.container_inline_inline_title{
+	height:20px;
+	margin-bottom:30px;
+}
+
+.container_inline_inline_title .div_img{
+	height:10px;
+	width:10px;
+	float:left;
+	background-color:black;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+.container_inline_inline_title .div_title{
+	height:20px;
+	float:left;
+}
