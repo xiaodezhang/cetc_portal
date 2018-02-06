@@ -1,0 +1,33 @@
+{% extends 'portal/normal_base.html' %}
+{% load static %}
+
+{% block title %}product and service{% endblock%}
+{% block service_active%}active{% endblock %}
+{% block content %}
+<div class = "content_title">
+	<h4 class="port_h">GENERAL APPLICATION SYSTEM OF POLE</h4>
+	<h1 class="port_h"> 智慧灯杆综合应用系统<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">系统概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+智慧灯杆以灯杆为核心，在实现智慧照明、绿色照明的基础上，扩展视频监控、语音广播、4G基站、wifi覆盖、空气质量检测、报警求助、信息发布、广告互动等功能，实现硬件可植入，软件可叠加，应用可扩展，是“互联网+物联网+智慧城市”的有效体现，是智慧城市实现物联网感知平台的有效载体。
+通过智慧灯杆感知城市动态，聆听城市心声，并提供全程全时服务，真正体现“智慧”，体现高水平高标准，实现互联互通，是物联网、云服务、大数据的综合运用，将全面提升城市的智慧化水平，推进“互联网+战略实施”。
+		</blockquote>
+    </div>
+</div>
+
+<div>
+	<h3 class="port_h">主要功能</h3>
+    <div class = "summary_img img_left">
+	    <img class ="municipal_img" src="{% static 'portal/img/smart_pole.png' %}"></img>
+    </div>
+    <div class = "summary_img img_left">
+	    <img class ="municipal_img" src="{% static 'portal/img/smart_pole_2.png' %}"></img>
+    </div>
+</div>
+
+
+{% endblock content%}
+

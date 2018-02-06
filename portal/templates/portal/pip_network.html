@@ -1,0 +1,90 @@
+{% extends 'portal/normal_base.html' %}
+{% load static %}
+
+{% block title %}product and service{% endblock%}
+{% block service_active%}active{% endblock %}
+{% block content %}
+<div class = "content_title">
+	<h4 class="port_h">ON-LINE MONITORING AND MANAGEMENT SYSTEM OF URBAN PIP NETWORK</h4>
+	<h1 class="port_h"> 城市管网在线监测管理系统<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">系统概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+            城市管网包括供水、燃气、供热等基础管网，还包括输送电能的地下管线。市政管网在线监测系统应用物联网技术，实时采集管网保罗流量、温度、压力等运行参数，通过数据处理和智能分析，得到管道运行状态并控制压缩机、泵、阀等执行机构的动作，实现城市管网安全、节能、稳定运行。同时，在遇到突发情况时，通过现场终端反馈上来的数据，可发动应急措施，避免损失的进一步扩大做到维护效率的最大化。
+		</blockquote>
+    </div>
+    <div class = "summary_img">
+	    <img class ="municipal_img" src="{% static 'portal/img/pip_network.png' %}"></img>
+    </div>
+</div>
+<div class = "advantage content_ending">
+	<h3 class="port_h">主要功能</h3>
+	<div class = "advantage_content">
+		<blockquote>
+			<b>供水监测：</b>对整个城市供水管网测点的压力、流量、流向、水质信息以及各水厂出厂流量、出厂压力、清水池水位、加压泵工作状态进行监测，生成每条管线压力分布曲线。
+
+		</blockquote>
+		<blockquote>
+			<b>供电监测：</b>在线监测地下供电线路电压、电缆接头（表皮）温度、可燃气体、有害气态和电缆井沟内火灾探测和积水水位。
+
+		</blockquote>
+		<blockquote>
+			<b>供气监测：</b>系统不间断在线采集供气线路现场问题、压力、流量等实时数据，并自动处理、分析、保存历史数据，动态显示现场各监控站点变化的数据，自动形成报表、报警、趋势等。
+		</blockquote>
+		<blockquote>
+			<b>供热监测：</b>远程在线监测供热管网每个计量仪表的运行情况，实时采集各用户子站的温度、压力、流量和40多项仪表运行参数及一次表原始信号，为用户提供任意时间段内的用汽情况以及在厂内实时进行故障源头的辅助判断。
+		</blockquote>
+    </div>
+</div>
+
+
+<div class = "content_title">
+	<h4 class="port_h">INTEGRATED MANAGEMENT SYSTEM OF URBAN WATER SUPPLY AND DRAINAGE</h4>
+	<h1 class="port_h">城市给排水综合管理系统<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">系统概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+                城市给排水综合管理系统是针对城市给排水网络的数据采集、分析决策、调度监控和行政管理的多层次智能化的信息系统。通过该系统可以实时动态掌握全市给排水管网以及各个排水泵站的水量状态及设备工作情况，并快速准确的制定应急排水方案和防汛对策，对水阀泵站进行统一调度。同时，也可以针对突发情况快速制定和选择合理的紧急处置方案和调度预案，实现城市给排水网络的智能运行、科学管理，实现城市水网的安全、经济、合理、高效运行。
+		</blockquote>
+    </div>
+</div>
+<div class ="summary">
+	<h3 class="port_h">系统结构</h3>
+    <div class = "summary_img">
+	    <img class ="municipal_img" src="{% static 'portal/img/water_supply.png' %}"></img>
+    </div>
+ </div>
+<div class = "advantage">
+	<h3 class="port_h">主要功能</h3>
+	<div class = "advantage_content">
+		<blockquote>
+			<b>实时采集：</b>系统实时采集给排水设备实时状态，包括管道压力流量、泵站启闭、闸门启闭、现场供电数据等。
+
+		</blockquote>
+		<blockquote>
+			<b>流量计算：</b>系统实现流量计算、记录，通过曲线统计显示，并可查看任一点的详细信息。
+		</blockquote>
+		<blockquote>
+			<b>自动故障警报：</b>当监测数据超出正常范围，系统立即告警。以实现主动避免和减小危害的目的，故障报警数据上传并在本地记录。
+		</blockquote>
+		<blockquote>
+			<b>事件和事件记录：</b>当闸门启闭，水泵启停等工况的状态变化，或者进行相关的操作事件，系统参加的增加、删除、修改等操作，故障或异常报警都被视为事件而被及时上传并记录在案。
+		</blockquote>
+		<blockquote>
+			<b>图像监视：</b>系统具有实时图像监控功能，可根据泵站的实际情况配置。
+		</blockquote>
+		<blockquote>
+			<b>统计报表功能：</b>系统对监测数据自动做出日报、月报、年报，不同的时间段自动进行对比分析，通过分析历史数据，进而做出数据预测。
+		</blockquote>
+    </div>
+</div>
+
+
+
+
+{% endblock content%}
+

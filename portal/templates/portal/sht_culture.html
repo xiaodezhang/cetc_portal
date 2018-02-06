@@ -1,0 +1,42 @@
+{% extends 'portal/normal_base.html' %}
+{% load static %}
+
+{% block title %}企业文化{% endblock%}
+{% block info_active%}active{% endblock %}
+{% block content %}
+<div class = "content_title">
+	<h1 class="port_h">公司文化<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">中国电子科技集团公司第五十研究所
+上海五零盛同信息科技有限公司</h3>
+	<div class = "summary_content">
+		<blockquote>
+                <b>企业精神：</b>创新 诚信 有爱 奉献
+		</blockquote>
+		<blockquote>
+                <b>廉洁理念：</b>诚实守信  依法合规 勤勉尽责
+		</blockquote>
+		<blockquote>
+                <b>经验理念：</b>内练素质 外树形象 创新做强 联合做大
+		</blockquote>
+		<blockquote>
+                <b>质量理念：</b>技术先进 管理严谨 品质一流 顾客满意
+		</blockquote>
+		<blockquote>
+                <b>安全理念：</b>以人为本 安全发展 四个第一 四个一切
+		</blockquote>
+		<blockquote>
+                <b>保密理念：</b>积极防范 突出重点 严格标注怒 严格管理
+		</blockquote>
+		<blockquote>
+                <b>管理理念：</b>以经济效益为中心 以技术创新为动力 以岗位职业为基础
+		</blockquote>
+    </div>
+    <div class = "summary_img">
+	    <img class ="municipal_img" src="{% static 'portal/img/sht_summary.png' %}"></img>
+    </div>
+</div>
+
+{% endblock content%}
+

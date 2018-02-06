@@ -1,6 +1,7 @@
 {% extends 'portal/normal_base.html' %}
 {% load static %}
 
+{% block title %}product and service{% endblock%}
 {% block service_active%}active{% endblock %}
 {% block content %}
 <div class = "content_title">
@@ -32,10 +33,114 @@
 		</blockquote>
     </div>
 </div>
-<div class = "functions">
+<div class = "functions content_ending">
 	<h3 class="port_h">主要功能</h3>
 	<div class = "functions_content">
 		<img src="{% static 'portal/img/municipal_functions_img.png' %}" style="width:80%;"></img>
+	</div>
+</div>
+
+
+
+<div class = "content_title">
+	<h4 class="port_h">ASSETS GEOGRAPHY INFORMATION SYSTEM OF CITY SERVICES</h4>
+	<h1 class="port_h">城市市政资产地理信息系统<h1>
+</div>
+<div class = "summary">
+	<h3 clas s="port_h">系统概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+                城市市政地理信息系统将GIS技术服务于城市市政的智慧管理中，能够把图形管理系统、数据管理系统有机地结合起来，克服了监控系统和图形系统各自的局限性，使两者优势加强联合，效果更加突出。城市市政地理信息系统将GIS技术应用到市政管理中，实现对市政设施资产信息进行收集、存储、分析，给人以直观完整而深刻的印象，同事为城市规划决策提供有力的支持。
+		</blockquote>
+    </div>
+    <div class = "summary_img">
+	    <img id="municipal_img" src="{% static 'portal/img/gis1.png' %}"></img>
+    </div>
+</div>
+<div class = "advantage content_ending">
+	<h3 class="port_h">主要功能</h3>
+	<div class = "advantage_content">
+		<blockquote>
+			<b>地图操作：</b>放大、缩小、漫游、全图、距离测量、面积测量、前后视图、保存地图等。
+		</blockquote>
+		<blockquote>
+			<b>数据编辑：</b>城市部件空间数据和属性数据的输入编辑，直观构造与各元素相关的属性数据库。
+		</blockquote>
+		<blockquote>
+			<b>应用系统联动：</b>通过地理信息系统实现和其他应用系统联动。
+		</blockquote>
+	        <blockquote>
+			<b>数据互联互通：</b>实现专题数据、应用数据、业务数据互联互通，达到全局数据分析，决策支撑。
+		</blockquote>
+		<blockquote>
+			<b>资产信息管理：</b>所有部件属性、资料以及多媒体数据输入、输出、分析，生命周期管理，维修维护决策指导。
+		</blockquote>
+		<blockquote>
+			<b>数据查询统计：</b>图形检索属性和由属性检索图形的双向查询，空间统计、报表、打印、输出。
+		</blockquote>
+		<blockquote>
+			<b>事故分析：</b>影响范围检测，了解当前部件故障对周边设施影响
+		</blockquote>
+		<blockquote>
+			<b>实景三维：</b>采用三维虚拟展现技术，支持全景空间切换，达到对市政设施全方位管理目的。
+	</blockquote>
+    	</div>
+	<div class = "advantage_imgs">
+		<img src = "{% static 'portal/img/gis2.png' %}" class = "advantage_img"></img>
+		<img src = "{% static 'portal/img/gis3.png' %}" class = "advantage_img"></img>
+		<img src = "{% static 'portal/img/gis4.png' %}" class = "advantage_img"></img>
+	</div>
+</div>
+
+
+
+
+<div class = "content_title">
+	<h4 class="port_h">INTEGRATED MANAGEMENT SYSTEM OF CITY BRIDGE</h4>
+	<h1 class="port_h"> 城市桥梁综合管理系统<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">系统概述</h3>
+	<div class = "summary_content">
+		<blockquote>
+            城市桥梁综合管理系统以地理信息系统为依托，规范化桥梁档案信息，形成一套完善全面的系统化的桥梁技术检测方法，并在此基础上对桥梁运行状况做出评价，为桥梁的维护维修提供更合理的决策依据和最佳时机。系统使桥梁的运行状态的反馈更加及时，避免维修时机不当或过度维修造成的资源浪费。同时可 有效协助管理人员对城市现有桥梁实行科学有效的管养工作，保证桥梁的监控安全运行，进一步实现市政设施行业管理、调度、服务的统一。
+		</blockquote>
+    </div>
+</div>
+<div class = "advantage bridge_system">
+	<h3 class="port_h">系统结构</h3>
+    <div style= "height:300px;">
+            <div style="float:left;">
+	    <img src="{% static 'portal/img/bridge_1.png'%}" style="width:550px;"></img>
+           </div>
+	   <div style="width:100px;float:left;">
+	    <img src="{% static 'portal/img/bridge_2.png'%}" style="height:150px;"></img>
+	    <img src="{% static 'portal/img/bridge_3.png'%}" style="width:200px;height:150px;"></img>
+	   </div>
+    </div>
+</div>
+<div class = "functions" style="margin-bottom:150px;">
+	<h3 class="port_h">主要功能</h3>
+	<div class = "advantage_content">
+	<blockquote>
+		<b>GIS信息管理：</b>是系统的重要依托，显示桥梁的分布位置，并提供查询、检索、编辑、输入输出等基本功能。
+	</blockquote>
+	<blockquote>
+		<b>档案信息管理：</b>记录桥梁设计和施工完成后的原始结构和几何特征、资料积累、是了解桥梁原始概况、评价桥梁技术状态的基础。
+	</blockquote>
+	<blockquote>
+		<b>桥梁在线监测：</b>利用光栅应变传感器、位移传感器、读取桥梁各部分结构的应变、位移、车辆载荷等参数，上传、存储、处理、分析和显示，实现专家诊断、预警、告警等智能化分析管理。
+	</blockquote>
+	<blockquote>
+	<b>桥梁视频监控：</b>通过球机、枪机、实现对桥梁视频监控管理。
+	</blockquote>
+	<blockquote>
+	<b>超重车辆引导：</b>对即将通过大桥的车辆进行重量监测，对超重车辆进行疏导，避免超重车辆对桥梁造成严重伤害。桥梁缺损估评估：用主观评定与客观量测关联的方法，对桥面系、上不结构和下部结构各基本单元构件进行逐级评分，通过综合加权汇总成全侨BCI，实现对城市桥梁进行定期的、全面的桥梁损坏和缺陷状况，从而为了解桥梁的稳定性提供依据，并建立起预警体系，为可能造成的危害及后期的加固处理提供数据支持。
+专家诊断评估：以BCI技术评估作为依据，结合专家经验实现对桥梁技术状况的全面评估，从而实现对桥梁状况的诊断。
+巡查维修管理：系统提供标准的巡查内容，巡查人员通过该内容来填写相关的日常巡查信息，作为桥梁日常巡查情况和工作考核的依据之一。
+报表统计分析：系统提供桥梁档案、BCI技术评估记录、维护记录等信息的报表的输出和打印功能。
+	</blockquote>
+
 	</div>
 </div>
 

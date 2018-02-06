@@ -248,33 +248,4 @@ a.container_inline_a{
 }
 
 .img_left{
-	text-align:left;
-}
-
-.home_product{
-	width:630px;
-	height:350px;
-	margin-bottom:45px;
-	font-size:80px;
-	text-align:center;
-	color:white;
-	padding-top:110px;
-}
-
-#home_municipal{
-	 background-image:url(../img/municipal_list.png);
-}
-#home_lighting{
-	 background-image:url(../img/lighting_list.png);
-}
-#home_pole{
-	 background-image:url(../img/pole_list.png);
-}
-#home_pip{
-	 background-image:url(../img/pip_list.jpg);
-}
-
-.home_product_a{
-	color:white;
-
 }

@@ -1,0 +1,24 @@
+{% extends 'portal/normal_base.html' %}
+{% load static %}
+
+{% block title %}product and service{% endblock%}
+{% block info_active%}active{% endblock %}
+{% block content %}
+<div class = "content_title">
+	<h1 class="port_h">企业业绩<h1>
+</div>
+<div class = "summary">
+	<h3 class="port_h">中国电子科技集团公司第五十研究所
+上海五零盛同信息科技有限公司</h3>
+	<div class = "summary_content">
+		<blockquote>
+          上海五零盛同信息科技有限公司业务涵盖范围广，目前在全国各省市几乎都有分布，其中华东覆盖范围最为密集，逐渐形成了以上海为中心的辐射业务模式。
+		</blockquote>
+    </div>
+    <div class = "summary_img">
+	    <img class ="municipal_img" src="{% static 'portal/img/sht_archevement.png' %}"></img>
+    </div>
+</div>
+
+{% endblock content%}
+
