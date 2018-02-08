@@ -118,6 +118,7 @@ body{
 
  #fullpage .firstPage .home_first_img{
 	 background-image:url(../img/first_page.jpg);
+#	 background:url(../img/first_video.mp4);
  }
  #fullpage .firstPage .home_title_center{
 	 background-image:url(../img/first_title.svg);
@@ -205,9 +206,9 @@ a.container_inline_a{
 }
 
 
-.main_page .page_navigater .pages_list .link_text{
-	color:rgba(192,192,192,0.6);
-}
+#.main_page .page_navigater .pages_list .link_text{
+#	color:rgba(192,192,192,0.6);
+#}
 
 .main_page .page_navigater .pages_list .circle_dot{
 	color:rgba(192,192,192,0.6);
@@ -276,5 +277,12 @@ a.container_inline_a{
 
 .home_product_a{
 	color:white;
-
 }
+
+a:hover,a:focus .home_product_a{
+	text-decoration:none;
+	color:black;
+}
+
+
+	

@@ -20,6 +20,9 @@ var initFullPageConfig = function(){
 					preventIndex = 1;
 					$('.main_page').addClass('notFirstPage');
 	    	}
+		if(index%2 != 0){
+			$('.main_page').addClass('notFirstPage');
+		}
 	    	if(index == 2 && nextIndex == 1){
 	    		$('.main_page').removeClass('notFirstPage');
 	    	}
@@ -35,6 +38,10 @@ var initFullPageConfig = function(){
 	    		//离开倒数第二屏的时候，取消辅助辅助效果，这个方法和上面协助使用
 	    		$('.main_page #section6').removeClass('pre_active');	
 	    	}
+		if(index%2 == 0){
+			$('.main_page').removeClass('notFirstPage');
+		}
+	
 	    },
 	    afterRender: function(){
 	    	//初始化渲染完成之后
